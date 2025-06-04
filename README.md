@@ -30,15 +30,10 @@ used Excel solver to find the appropriate weights to maximize Sharpe
 ratio. All this can be seen in the provided Excel workbook (See sheet
 titled portfolio analysis and optimization).
 
-Table 1
+![](images/image1.jpg)
 
+![](images/image2.jpg)
 
-
-Table 2
-
-
-
-Chart 1
 
 As can be seen from the chart 1 the capital allocation line intersect
 the efficient market curve at the volatility level of 39.43% with annual
@@ -47,17 +42,10 @@ weights for this combo of assets.
 
 **ANALYZING PORTFOLIO ON DIFFERENT PARAMETERS**
 
-1. For each investment, the statistics are:
+**1. For each investment, the statistics are:**
 
-
-
-Table 3
-
-Table 4a
-
-
-
-Table 4b                                                            
+![](images/image3.jpg)
+![](images/image4.jpg)                                                           
 
 
 From the table 3, it is evident that XLE is giving the highest return
@@ -70,9 +58,9 @@ niche. Given our needs, JLL and XLE are most correlated and 2nd most
 overall.
 
 
-2. Answering the following questions about the portfolio:
+**2. Answering the following questions about the portfolio:**
 
-2.1 Shorting: Can this portfolio be sold short?
+**2.1 Shorting: Can this portfolio be sold short?**
 
 Yes, this portfolio can be sold short. Essentially, one is betting
 against the return of the portfolio believing price of the shorted
@@ -90,14 +78,14 @@ $$P_{r} = 32.32$$
 So, one is gaining 40.08 - 32.32 = 7.76% return by shorting the
 portfolio.
 
-2.2 Credit Risk: Does this portfolio have credit risk?
+**2.2 Credit Risk: Does this portfolio have credit risk?**
 
 Since, we are investing in equity ETF by leveraging a stock, the
 portfolio have no credit risk as such. Though it has market and other
 idiosyncratic risks.
 
-2.3 Portfolio Statistics: weighted return and variance of the
-portfolio.
+**2.3 Portfolio Statistics: weighted return and variance of the
+portfolio.**
 
 $$P_{ret} = \ W_{A} \times A_{ret} + \ W_{B} \times B_{ret}$$
 
@@ -121,7 +109,7 @@ $$\mathbf{\sigma}_{\mathbf{AB}}^{\mathbf{2}}\mathbf{= 1554.72}$$
 **Volatility of Portfolio =**
 $$\mathbf{\sigma}_{\mathbf{AB}}\mathbf{= 39.43}$$
 
-2.4 Diversification: diversification between the two assets
+**2.4 Diversification: diversification between the two assets**
 
 According to the table 1 and table 3, if we bought on XLE stock and
 shorted nothing, we would get average annual return of 36.55% with
@@ -136,7 +124,7 @@ but increase in volatility is compensated by increase in return.
 Though, we can diversify this portfolio by buying more stocks or
 bonds.
 
-2.5 Comparing Portfolios:
+**2.5 Comparing Portfolios:**
 
 This portfolio is giving more returns than portfolio B and is more
 volatile. But portfolio B is giving the best return per unit of risk
@@ -145,12 +133,11 @@ and is most volatile with best Sharpe ratio. Despite best Sharpe
 ratio, this large volatility make it the most risky proposition.
 Portfolio B is best among the three in terms of diversification
 
-. Table 5
+![](images/image5.jpg).
 
 
-
-2.6 Assessing Risk and Performance: economic scenarios that would
-affect your security
+**2.6 Assessing Risk and Performance: economic scenarios that would
+affect your security**
 
 We have bought the XLE equity, which tracks the oil sector and oil
 sector is greatly affected by the supply and demand of oil. For
@@ -169,7 +156,7 @@ affect the portfolio's return as we are shorting it. Currently, US is
 facing high inflation along with slow GDP growth which is one of the
 reason JLL is trading now at its lowest price range in a year.
 
-2.7 Disrupters:
+**2.7 Disrupters:**
 
 a. Potential influence of the central bank on the portfolio.
 
@@ -189,7 +176,7 @@ portfolio, which affects the portfolio. Also, they can rate the
 portfolio's underlying securities which affect the sentiments of
 potential investors which in turn affect the portfolio.
 
-2.8 Re-assessing Risk:
+**2.8 Re-assessing Risk:**
 
 a\. Do the two investments in the portfolio have the same skew?
 
@@ -215,13 +202,14 @@ happens if the securities in this portfolio is to be negatively
 correlated or has strong positive correlation, does this increase
 volatility. This is the subject of further research.
 
-Deepak Aggarwal
 
-MScFE 560
+**Deepak Aggarwal**
 
-3 June 2025
+**MScFE 560**
 
-Group work project: Portfolio B
+**3 June 2025**
+
+## Group work project: Portfolio B
 
 The group work project portfolio selected is option B, which requires
 the purchase of any number of assets without shorting. The portfolio was
