@@ -481,7 +481,7 @@ represented by the y-axis, while the x-axis represents time. As can be
 seen, there is a sharp slowdown forecast in 2023, followed by a sharp
 recovery in late 2023 to early 2024
 
-![](images/image10.jpg)
+![](images/image10.png)
 
 Fig. 1. Historical and Forecast US Gross Domestic Product (The Economic
 Outlook for 2023 to 2033 in 16 Charts).
@@ -495,7 +495,7 @@ below, Fig. 2. from Black Rock, shows the steep climb in inflation
 depicted by the yellow line as we approach 2022 "Sizing up Inflation --
 Institutional.")
 
-![Persistent inflation](images/image20.jpg)
+![Persistent inflation](images/image20.png)
 
 Fig. 2. Euro and U.S. inflation ("Sizing up Inflation --
 Institutional.")
@@ -505,7 +505,7 @@ Figure 3 below shows the corresponding hikes in the US Federal Reserve
 lag, the inflation rises shown in Figure 2 (Effective Federal Funds
 Rate - FEDERAL RESERVE BANK of NEW YORK.)
 
-![](images/image30.jpg)
+![](images/image30.png)
 
 Fig. 3. Target Base Lending Rate set by the US Federal Reserve Bank
 (Effective Federal Funds Rate - FEDERAL RESERVE BANK of NEW YORK.)
@@ -586,7 +586,7 @@ quantities to score a particular stock. The three quantities are:
 3.  L1 Normalized returns -- to prioritize the most highly performing
     stocks, we chose the L1 Normalized returns of a stock.
 
-![](images/image40.jpg)
+![](images/image40.png)
 
 We Normalize all three quantities so that
 when we add them to a weighted sum. Such a generalized sum can be
@@ -599,7 +599,7 @@ the QQQ constituent stocks, and select the top scorer.
 
 Table 1 Scoring results of the QQQ constituent stocks.
 
-![](images/image50.jpg)
+![](images/image50.png)
 
 As shown in Table 1, the highest scoring stock is FANG, and the next,
 MRNA, is behind quite a bit with a score difference of over 0.2 points.
@@ -618,11 +618,11 @@ the most negatively correlated bond and ETFs with FANG, respectively.
 
 Table 2 Top five bond negative correlations with FANG
 
-![](images/image60.jpg)
+![](images/image60.png)
 
 Table 3 Top five ETF negative correlations with FANG
 
-![](images/image70.jpg)
+![](images/image70.png)
 
 We chart the correlation matrix below in Table 4. Table 4 confirms the
 negative correlations between FANG and the shorted part of the
@@ -635,24 +635,24 @@ observed thus far.
 
 Table 4 Correlation Matrix for the Option-C portfolio.
 
-![](images/image80.jpg)
+![](images/image80.png)
 
 Fig. 4. Histogram of the unique Option-c portfolio correlation values.
 
 ![Chart Description automatically generated with medium
-confidence](images/image90.jpg)
+confidence](images/image90.png)
 
  
 
 Table 5 Covariance Matrix for the Option-C portfolio.
 
-![](images/image100.jpg)
+![](images/image100.png)
 
 Table 6 shows the portfolio constituents\' performance, such as average
 annual returns, volatility, skew, kurtosis, and Sharpe Ratio for three
 calendar years.
 
-![](images/image110.jpg)
+![](images/image110.png)
 
 Looking at the portfolio members' performance in Table 6. --BNDX stands
 out as having negative skew. All Kurtosis levels are positive. The high
@@ -685,7 +685,7 @@ Sharpe Ratio.
 Fig. 5. Constraint-based optimization problem for allocating the
 portfolio constituents.
 
-![](images/image120.jpg)
+![](images/image120.png)
 
 The results of this maximization result in the following allocation of
 the portfolio constituents (negative allocations being short positions,
@@ -723,7 +723,7 @@ The efficiency frontier of this portfolio can be seen below in Fig. 6.
 
 Fig. 6. Efficiency curve of the portfolio
 
-![](images/image130.jpg)
+![](images/image130.png)
 
 **Comments on Credit Risk**
 
@@ -914,7 +914,7 @@ Accessed 27 Apr. 2023.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Email
-** By Rahul Garg & Deepak Aggarwal**
+**By Rahul Garg & Deepak Aggarwal**
 
 Dear \[Investor Name\],
 
@@ -965,5 +965,5 @@ Yours Sincerely
 Funds Manager (XYZ Company)
 
 ## Marketing Piece:
-** By Rahul Garg**
+**By Rahul Garg**
 ![](images/image140.jpg)
