@@ -256,7 +256,7 @@ percent. Next, the portfolio volatility have been calculated using the
 covariance and weights of the assets. The portfolio volatility comes out
 as 22.72 percent. Sharpe ratio which is found as given below:-
 
-$$Sharpe-Ratio = \frac{expected\, return - risk\, free\, return}{portfolio\, volatility}$$
+$$Sharpe\ Ratio = \frac{expected\ return - risk\ free\ return}{portfolio\ volatility}$$
 
 The Risk-free return in the calculation is taken as 5.04 % which is the
 current U.S Treasury bond rate. The Sharpe Ratio for the Portfolio comes
@@ -299,7 +299,7 @@ a\. Compute the weighted return of the portfolio.
 
 Weighted return of portfolio is calculated as per formula given below:
 
-$$Weighted\, Return\, of\, portfolio = \sum_{i = 1}^{n}(Weight\, of\, Asset\, i \times Return\, of\, Asset\, i)$$
+$$Weighted\ Return\ of\ portfolio = \sum_{i = 1}^{n}(Weight\ of\ Asset_i \times Return\ of\ Asset_i)$$
 
 b\. Compute the Variance of the portfolio.
 
