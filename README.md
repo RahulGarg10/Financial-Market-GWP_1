@@ -7,13 +7,13 @@
 All the relevant files can be found in this repository.
 
 
-Rahul Garg
+**Rahul Garg**
 
-MscFE 560
+**MscFE 560**
 
-April 27, 2023
+**April 27, 2023**
 
-Portfolio A: Buy one asset and short one asset
+## Portfolio A: Buy one asset and short one asset
 
 In order to select the required assets, I have taken a two income stocks
 one from Pfizer Inc. (PFE) and one from Jones Lang LaSalle Incorporated
@@ -32,25 +32,11 @@ titled portfolio analysis and optimization).
 
 Table 1
 
-  -------------------------------------------------------------------------
-  Asset       Weight                Avg. annual   Volatility    Weighted
-                                    Return                      Return
-  ----------- --------------------- ------------- ------------- -----------
-  JLL         -0.18                 17.11         40.60         -3.11
 
-  XLE         1.18                  36.55         35.94         43.19
-
-              1                                                 40.08
-  -------------------------------------------------------------------------
 
 Table 2
 
-  ------------------------------------------------------------------------
-  Portfolio     Return                    Volatility      Sharpe Ratio
-  ------------- ------------------------- --------------- ----------------
-                40.08                     39.43           0.889
 
-  ------------------------------------------------------------------------
 
 Chart 1
 
@@ -63,224 +49,170 @@ weights for this combo of assets.
 
 1.  For each investment, the statistics are:
 
-  --------------------------------------------------------------------------------------------
-  **Asset**       **Average      **Volatility**   **Kurtosis**   **Skewness**   **Sharpe
-                  Daily Return**                                                Ratio**
-  --------------- -------------- ---------------- -------------- -------------- --------------
-  PFE             0.033          1.68             3.95           0.479          0.123
 
-  JLL             0.068          2.56             4.65           0.504          0.297
-
-  XLK             0.084          1.64             1.17           -0.103         0.622
-
-  XLE             0.145          2.26             2.51           0.223          0.877
-
-  VWO             0.025          1.24             2.44           0.234          0.060
-
-  Risk Free Rate  5.040          (Yearly)                                       
-  --------------------------------------------------------------------------------------------
 
 Table 3
 
 Table 4a
 
-  --------------------------------------------------------------------------------
-  ***Covariance    ***PFE         ***JLL      ***XLK      ***XLE      ***VWO
-  Matrix***        Return***      Return***   Return***   Return***   Return***
-  ---------------- -------------- ----------- ----------- ----------- ------------
-  PFE Return       2.819          0.671       0.651       0.664       0.329
 
-  JLL Return       0.671          6.534       2.018       2.801       1.507
 
-  XLK Return       0.651          2.018       2.677       1.104       1.301
+Table 4b                                                            
 
-  XLE Return       0.664          2.801       1.104       5.120       1.161
 
-  VWO Return       0.329          1.507       1.301       1.161       1.545
+From the table 3, it is evident that XLE is giving the highest return
+with second highest volatility yet giving the highest Sharpe ratio
+among the assets. Similarly, JLL has the most volatility. So, the
+first hint for shorting JLL and buying XLE comes from this. Now to
+check about the correlation among them, from the table 4b, XLK and VWO
+are most correlated as they both track the market though of different
+niche. Given our needs, JLL and XLE are most correlated and 2^nd^ most
+overall.
 
-  Table 4b                                                            
+2. Answering the following questions about the portfolio:
 
-  ***Correlation   ***PFE         ***JLL      ***XLK      ***XLE      ***VWO
-  Matrix***        Return***      Return***   Return***   Return***   Return***
+2.1 Shorting: Can this portfolio be sold short?
 
-  PFE Return       1              0.156       0.237       0.175       0.158
+Yes, this portfolio can be sold short. Essentially, one is betting
+against the return of the portfolio believing price of the shorted
+security will go up and price of XLE will go down
+or price of XLE will go down significantly, offsetting the gain of JLL
+security.
+Let say, return of JLL remains same and return of XLE now fallen down
+to 30%.
+So, portfolio returns become
 
-  JLL Return       0.156          1           0.483       0.484       0.474
+$$P_{r} = 1.18 \times 30 + ( - 0.18) \times 17.11$$
 
-  XLK Return       0.237          0.483       1           0.298       0.64
+$$P_{r} = 32.32$$
 
-  XLE Return       0.175          0.484       0.298       1           0.413
+So, one is gaining 40.08 -- 32.32 = 7.76% return by shorting the
+portfolio.
 
-  VWO Return       0.158          0.474       0.640       0.413       1
-  --------------------------------------------------------------------------------
+2.2 Credit Risk: Does this portfolio have credit risk?
 
-> From the table 3, it is evident that XLE is giving the highest return
-> with second highest volatility yet giving the highest Sharpe ratio
-> among the assets. Similarly, JLL has the most volatility. So, the
-> first hint for shorting JLL and buying XLE comes from this. Now to
-> check about the correlation among them, from the table 4b, XLK and VWO
-> are most correlated as they both track the market though of different
-> niche. Given our needs, JLL and XLE are most correlated and 2^nd^ most
-> overall.
->
-> 2\. Answering the following questions about the portfolio:
->
-> 2.1 Shorting: Can this portfolio be sold short?
->
-> Yes, this portfolio can be sold short. Essentially, one is betting
-> against the return of the portfolio believing price of the shorted
-> security will go up and price of XLE will go down
->
-> or price of XLE will go down significantly, offsetting the gain of JLL
-> security.
->
-> Let say, return of JLL remains same and return of XLE now fallen down
-> to 30%.
->
-> So, portfolio returns become
->
-> $$P_{r} = 1.18 \times 30 + ( - 0.18) \times 17.11$$
->
-> $$P_{r} = 32.32$$
->
-> So, one is gaining 40.08 -- 32.32 = 7.76% return by shorting the
-> portfolio.
->
-> 2.2 Credit Risk: Does this portfolio have credit risk?
->
-> Since, we are investing in equity ETF by leveraging a stock, the
-> portfolio have no credit risk as such. Though it has market and other
-> idiosyncratic risks.
->
-> 2.3 Portfolio Statistics: weighted return and variance of the
-> portfolio.
->
-> $P_{ret} = \ W_{A} \times A_{ret} + \ W_{B} \times B_{ret}$
->
-> $W_{A} = 1.18$ $W_{B} = - 0.18$
->
-> $A_{ret} = 36.55$ $B_{ret} = 17.11$
->
-> **Weighted Portfolio Return =** $\mathbf{P}_{\mathbf{ret}}$ **=
-> 40.08%**
->
-> $\sigma_{AB}^{2} = (W_{A}^{2} \times \sigma_{A}^{2} + \ W_{B}^{2} \times \sigma_{B}^{2} + 2\rho_{AB} \times W_{A} \times W_{B} \times \sigma_{A} \times \sigma_{B}) \times T_{D}$
+Since, we are investing in equity ETF by leveraging a stock, the
+portfolio have no credit risk as such. Though it has market and other
+idiosyncratic risks.
 
-$\sigma_{A} = 2.26$ $\sigma_{B} = 2.56$
+2.3 Portfolio Statistics: weighted return and variance of the
+portfolio.
 
-$\rho_{AB} = 0.484\ (Correlation)$
+$$P_{ret} = \ W_{A} \times A_{ret} + \ W_{B} \times B_{ret}$$
 
-$T_{D} = 252\ (No.\ of\ Trading\ Days\ in\ a\ year)$
+$$W_{A} = 1.18$ $W_{B} = - 0.18$$
+>
+$$A_{ret} = 36.55$ $B_{ret} = 17.11$$
+
+**Weighted Portfolio Return =** $\mathbf{P}_{\mathbf{ret}}$ **= 40.08%**
+
+$$\sigma_{AB}^{2} = (W_{A}^{2} \times \sigma_{A}^{2} + \ W_{B}^{2} \times \sigma_{B}^{2} + 2\rho_{AB} \times W_{A} \times W_{B} \times \sigma_{A} \times \sigma_{B}) \times T_{D}$$
+
+$$\sigma_{A} = 2.26$ $\sigma_{B} = 2.56$$
+
+$$\rho_{AB} = 0.484\ (Correlation)$$
+
+$$T_{D} = 252\ (No.\ of\ Trading\ Days\ in\ a\ year)$$
 
 **Variance of Portfolio =**
-$\mathbf{\sigma}_{\mathbf{AB}}^{\mathbf{2}}\mathbf{= 1554.72}$
+$$\mathbf{\sigma}_{\mathbf{AB}}^{\mathbf{2}}\mathbf{= 1554.72}$$
 
 **Volatility of Portfolio =**
-$\mathbf{\sigma}_{\mathbf{AB}}\mathbf{= 39.43}$
+$$\mathbf{\sigma}_{\mathbf{AB}}\mathbf{= 39.43}$$
 
-> 2.4 Diversification: diversification between the two assets
->
-> According to the table 1 and table 3, if we bought on XLE stock and
-> shorted nothing, we would get average annual return of 36.55% with
-> volatility 35.94% and Sharpe ratio of 0.877. But with shorting 18% of
-> JLL stock we increased our return to 40.08% with volatility of 39.43%
-> giving us Sharpe ratio of 0.889 (see table 2). So, by combining two
-> assets we increased return per unit of risk. Hence, leveraging is
-> beneficial for us.
->
-> Since we are only buying one asset and shorting other, there is not
-> much diversification here. Risk is not being reduced by shorting JLL,
-> but increase in volatility is compensated by increase in return.
-> Though, we can diversify this portfolio by buying more stocks or
-> bonds.
->
-> 2.5 Comparing Portfolios:
->
-> This portfolio is giving more returns than portfolio B and is more
-> volatile. But portfolio B is giving the best return per unit of risk
-> among the three portfolios. Portfolio C is giving us the most return
-> and is most volatile with best Sharpe ratio. Despite best Sharpe
-> ratio, this large volatility make it the most risky proposition.
-> Portfolio B is best among the three in terms of diversification
+2.4 Diversification: diversification between the two assets
+
+According to the table 1 and table 3, if we bought on XLE stock and
+shorted nothing, we would get average annual return of 36.55% with
+volatility 35.94% and Sharpe ratio of 0.877. But with shorting 18% of
+JLL stock we increased our return to 40.08% with volatility of 39.43%
+giving us Sharpe ratio of 0.889 (see table 2). So, by combining two
+assets we increased return per unit of risk. Hence, leveraging is
+beneficial for us.
+Since we are only buying one asset and shorting other, there is not
+much diversification here. Risk is not being reduced by shorting JLL,
+but increase in volatility is compensated by increase in return.
+Though, we can diversify this portfolio by buying more stocks or
+bonds.
+
+2.5 Comparing Portfolios:
+
+This portfolio is giving more returns than portfolio B and is more
+volatile. But portfolio B is giving the best return per unit of risk
+among the three portfolios. Portfolio C is giving us the most return
+and is most volatile with best Sharpe ratio. Despite best Sharpe
+ratio, this large volatility make it the most risky proposition.
+Portfolio B is best among the three in terms of diversification
 
 . Table 5
 
-  -------------------------------------------------------------------------
-  **Portfolio**     **Average Annual  **Volatility**    **Sharpe Ratio**
-                    Return**                            
-  ----------------- ----------------- ----------------- -------------------
-  A                 40.08             39.43             0.89
 
-  B                 25.7              22.72             0.91
 
-  C                 140.44            107.12            1.31
-  -------------------------------------------------------------------------
+2.6 Assessing Risk and Performance: economic scenarios that would
+affect your security
 
-> 2.6 Assessing Risk and Performance: economic scenarios that would
-> affect your security
->
-> We have bought the XLE equity, which tracks the oil sector and oil
-> sector is greatly affected by the supply and demand of oil. For
-> instance, at the peak of COVID, the demand of oil became so low that
-> the price of XLE fell down drastically. Hence, similar event would
-> negatively affect the portfolio's return. Now, a few months back
-> because of Ukraine war, Russia, a major oil producing country, was hit
-> by the sanctions. Hence, the supply of oil in the international market
-> was short resulting in high demand and high portfolio returns due
-> price rise of XLE stock.
->
-> JLL belongs to real estate sector, above mentioned things doesn't
-> affect it much. Rise in inflation, rise in interest rates, slow
-> economic growth negatively affect its price which in turn positively
-> affect the portfolio's return as we are shorting it. Currently, US is
-> facing high inflation along with slow GDP growth which is one of the
-> reason JLL is trading now at its lowest price range in a year.
->
-> 2.7 Disrupters:
->
-> a\. Potential influence of the central bank on the portfolio.
->
-> Central Bank is responsible for maintaining inflation rate as well as
-> interest in a country. So, if they decide to bring down the interest
-> rate or cost of borrowing and it will help in rallying the JLL's price
-> which brings down the portfolio's return. Also, liquidity in the
-> market is controlled by the central bank. Low liquidity, low JLL's
-> return and high portfolio's return.
->
-> b\. Potential influence of the investment banks on the portfolio.
->
-> Investment banks can both positively and negatively impact the
-> portfolio. For example, through their analysis they can rate this
-> portfolio good or bad on different metrics. They can short the
-> portfolio, which affects the portfolio. Also, they can rate the
-> portfolio's underlying securities which affect the sentiments of
-> potential investors which in turn affect the portfolio.
->
-> 2.8 Re-assessing Risk:
->
-> a\. Do the two investments in the portfolio have the same skew?
->
-> According to the table 3, JLL has skew of 0.504 and XLE has skew of
-> 0.223. The normal distribution curve of these two (See the chart
-> titled excel sheet in the Portfolio A workbook in zipped folder)
-> clearly depicts this difference in skewness as JLL is more volatile
-> and has more outliers.
->
-> b\. Is there a difference between the types of correlation?
->
-> Since there is only two securities in this portfolio, there is only
-> one correlation coefficient which is 0.484 which suggest, they move in
-> the same direction. Their correlation is on the stronger side.
->
-> **CONCLUSION**
->
-> In the end, it would be interesting it to analyze this portfolio by
-> adding more securities by buying some long and some short positons.
-> Also, it will be of further interest to investigate the long short
-> pairs trading strategy by having two strongly correlated assets. What
-> happens if the securities in this portfolio is to be negatively
-> correlated or has strong positive correlation, does this increase
-> volatility. This is the subject of further research.
+We have bought the XLE equity, which tracks the oil sector and oil
+sector is greatly affected by the supply and demand of oil. For
+instance, at the peak of COVID, the demand of oil became so low that
+the price of XLE fell down drastically. Hence, similar event would
+negatively affect the portfolio's return. Now, a few months back
+because of Ukraine war, Russia, a major oil producing country, was hit
+by the sanctions. Hence, the supply of oil in the international market
+was short resulting in high demand and high portfolio returns due
+price rise of XLE stock.
+
+JLL belongs to real estate sector, above mentioned things doesn't
+affect it much. Rise in inflation, rise in interest rates, slow
+economic growth negatively affect its price which in turn positively
+affect the portfolio's return as we are shorting it. Currently, US is
+facing high inflation along with slow GDP growth which is one of the
+reason JLL is trading now at its lowest price range in a year.
+
+2.7 Disrupters:
+
+a. Potential influence of the central bank on the portfolio.
+
+Central Bank is responsible for maintaining inflation rate as well as
+interest in a country. So, if they decide to bring down the interest
+rate or cost of borrowing and it will help in rallying the JLL's price
+which brings down the portfolio's return. Also, liquidity in the
+market is controlled by the central bank. Low liquidity, low JLL's
+return and high portfolio's return.
+
+b\. Potential influence of the investment banks on the portfolio.
+
+Investment banks can both positively and negatively impact the
+portfolio. For example, through their analysis they can rate this
+portfolio good or bad on different metrics. They can short the
+portfolio, which affects the portfolio. Also, they can rate the
+portfolio's underlying securities which affect the sentiments of
+potential investors which in turn affect the portfolio.
+
+2.8 Re-assessing Risk:
+
+a\. Do the two investments in the portfolio have the same skew?
+
+According to the table 3, JLL has skew of 0.504 and XLE has skew of
+0.223. The normal distribution curve of these two (See the chart
+titled excel sheet in the Portfolio A workbook in zipped folder)
+clearly depicts this difference in skewness as JLL is more volatile
+and has more outliers.
+
+b\. Is there a difference between the types of correlation?
+
+Since there is only two securities in this portfolio, there is only
+one correlation coefficient which is 0.484 which suggest, they move in
+the same direction. Their correlation is on the stronger side.
+
+**CONCLUSION**
+
+In the end, it would be interesting it to analyze this portfolio by
+adding more securities by buying some long and some short positons.
+Also, it will be of further interest to investigate the long short
+pairs trading strategy by having two strongly correlated assets. What
+happens if the securities in this portfolio is to be negatively
+correlated or has strong positive correlation, does this increase
+volatility. This is the subject of further research.
 
 Deepak Aggarwal
 
