@@ -89,15 +89,15 @@ portfolio.**
 
 $$P_{ret} = \ W_{A} \times A_{ret} + \ W_{B} \times B_{ret}$$
 
-$$W_{A} = 1.18$ $W_{B} = - 0.18$$
+$$W_{A} = 1.18,\  W_{B} = - 0.18$$
 >
-$$A_{ret} = 36.55$ $B_{ret} = 17.11$$
+$$A_{ret} = 36.55,\  B_{ret} = 17.11$$
 
 **Weighted Portfolio Return =** $\mathbf{P}_{\mathbf{ret}}$ **= 40.08%**
 
 $$\sigma_{AB}^{2} = (W_{A}^{2} \times \sigma_{A}^{2} + \ W_{B}^{2} \times \sigma_{B}^{2} + 2\rho_{AB} \times W_{A} \times W_{B} \times \sigma_{A} \times \sigma_{B}) \times T_{D}$$
 
-$$\sigma_{A} = 2.26$ $\sigma_{B} = 2.56$$
+$$\sigma_{A} = 2.26,\  \sigma_{B} = 2.56$$
 
 $$\rho_{AB} = 0.484\ (Correlation)$$
 
