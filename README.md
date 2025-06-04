@@ -47,7 +47,7 @@ weights for this combo of assets.
 
 **ANALYZING PORTFOLIO ON DIFFERENT PARAMETERS**
 
-1.  For each investment, the statistics are:
+1. For each investment, the statistics are:
 
 
 
@@ -66,8 +66,9 @@ among the assets. Similarly, JLL has the most volatility. So, the
 first hint for shorting JLL and buying XLE comes from this. Now to
 check about the correlation among them, from the table 4b, XLK and VWO
 are most correlated as they both track the market though of different
-niche. Given our needs, JLL and XLE are most correlated and 2^nd^ most
+niche. Given our needs, JLL and XLE are most correlated and 2nd most
 overall.
+
 
 2. Answering the following questions about the portfolio:
 
@@ -86,7 +87,7 @@ $$P_{r} = 1.18 \times 30 + ( - 0.18) \times 17.11$$
 
 $$P_{r} = 32.32$$
 
-So, one is gaining 40.08 -- 32.32 = 7.76% return by shorting the
+So, one is gaining 40.08 - 32.32 = 7.76% return by shorting the
 portfolio.
 
 2.2 Credit Risk: Does this portfolio have credit risk?
