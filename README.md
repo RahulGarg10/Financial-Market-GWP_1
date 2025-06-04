@@ -202,6 +202,7 @@ happens if the securities in this portfolio is to be negatively
 correlated or has strong positive correlation, does this increase
 volatility. This is the subject of further research.
 
+---------------------------------------------------------------------------------------------------------------------------------------
 
 **Deepak Aggarwal**
 
@@ -209,7 +210,7 @@ volatility. This is the subject of further research.
 
 **3 June 2025**
 
-## Group work project: Portfolio B
+## Portfolio B : Buy any number of Assets (No Shorting)
 
 The group work project portfolio selected is option B, which requires
 the purchase of any number of assets without shorting. The portfolio was
@@ -244,38 +245,8 @@ the results of these calculations for each asset.
 
 Table 1
 
-  ----------------------------------------------------------------------------
-            MON100    Niftybees   Tatamotors   Voltas   INDHOTEL     BTCINR
-  --------- --------- ----------- ------------ -------- ------------ ---------
-  Average   0.068     0.053       0.065        0.039    0.104        0.239
+![](images/image6.jpg)
 
-  Stdev     1.491     1.096       3.105        1.971    2.516        4.578
-
-  Skew      -0.638    -1.016      0.658        -0.080   0.384        -0.353
-
-  Kurt      6.831     11.841      6.610        3.831    5.184        7.038
-  ----------------------------------------------------------------------------
-
-After finding the above econometrics the covariance matrix has been
-found out (see table 2)
-
-Table 2
-
-  -------------------------------------------------------------------------------
-               MON100     Niftybees   Tatamotors   Voltas   INDHOTEL    BTCINR
-  ------------ ---------- ----------- ------------ -------- ----------- ---------
-  MON100       2.220      0.621       1.379        0.610    0.637       0.400
-
-  Niftybees    0.621      1.200       1.961        1.217    1.285       0.373
-
-  Tatamotors   1.379      1.961       9.632        2.421    2.873       0.154
-
-  Voltas       0.610      1.217       2.421        3.882    1.865       0.164
-
-  INDHOTEL     0.637      1.285       2.873        1.865    6.325       0.613
-
-  BTCINR       0.400      0.373       0.154        0.164    0.613       20.942
-  -------------------------------------------------------------------------------
 
 The expected return is found using the Sum product of the weight of the
 asset and avg. return of the asset which comes out to be 0.1020 which
@@ -283,8 +254,9 @@ further multiplied by the number of trading days i.e. 252 in a year to
 get the expected return of the portfolio which comes out as 25.70
 percent. Next, the portfolio volatility have been calculated using the
 covariance and weights of the assets. The portfolio volatility comes out
-as 22.72 percent. Sharpe ratio which is found as given below:-\
-$$Sharpe\, Ratio = \frac{expected\, return - risk\, free\, return}{portfolio\, volatility}$$
+as 22.72 percent. Sharpe ratio which is found as given below:-
+
+$$Sharpe-Ratio = \frac{expected\, return - risk\, free\, return}{portfolio\, volatility}$$
 
 The Risk-free return in the calculation is taken as 5.04 % which is the
 current U.S Treasury bond rate. The Sharpe Ratio for the Portfolio comes
@@ -292,7 +264,7 @@ out as 0.91. High Sharpe Ratio suggests that the portfolio has performed
 well relative to its risk and that it may be a suitable investment
 option for risk-averse investors.
 
-1\. Shorting
+**1\. Shorting**
 
 a\. Can this portfolio be sold short? (Hint: Yes, but be sure to explain
 part b)
@@ -301,191 +273,174 @@ Yes this portfolio can be sold short.
 
 b\. If it can be sold short, walk through the mechanics.
 
-> Short selling is called as "Sell now Buy later". Short selling
-> involves borrowing shares of an asset, selling them on the market, and
-> then buying them back at a later time to return to the lender. The
-> difference between the sale price and the purchase price is the profit
-> or loss from the short sale. As this portfolio contains stocks which
-> are moderately co related such as Indhotel, Tatamotors, Niftybees and
-> Voltas with each other. So, when one security falls it is possible
-> that the other security will fall in relation to other. So, we can
-> short sell the portfolio.
+Short selling is called as "Sell now Buy later". Short selling
+involves borrowing shares of an asset, selling them on the market, and
+then buying them back at a later time to return to the lender. The
+difference between the sale price and the purchase price is the profit
+or loss from the short sale. As this portfolio contains stocks which
+are moderately co related such as Indhotel, Tatamotors, Niftybees and
+Voltas with each other. So, when one security falls it is possible
+that the other security will fall in relation to other. So, we can
+short sell the portfolio.
 
-2\. Credit Risk
+**2\. Credit Risk**
 
 a\. Does this portfolio have credit risk?
 
-> Credit risk arises in case of bonds when the issuer of the bond fails
-> to pay the interest or fails to re-pay the principal amount. This
-> Portfolio consists of assets such as ETF, Stocks and Cryptocurrency
-> which do not holds credit risk. However other risk such as market
-> risk, liquidity risk still persist with portfolio.
+Credit risk arises in case of bonds when the issuer of the bond fails
+to pay the interest or fails to re-pay the principal amount. This
+Portfolio consists of assets such as ETF, Stocks and Cryptocurrency
+which do not holds credit risk. However other risk such as market
+risk, liquidity risk still persist with portfolio.
 
-3\. Portfolio Statistics
+**3\. Portfolio Statistics**
 
 a\. Compute the weighted return of the portfolio.
 
-Weighted return of portfolio is calculated as per formula given below\
+Weighted return of portfolio is calculated as per formula given below:
+
 $$Weighted\, Return\, of\, portfolio = \sum_{i = 1}^{n}(Weight\, of\, Asset\, i \times Return\, of\, Asset\, i)$$
 
 b\. Compute the Variance of the portfolio.
 
 Variance of Portfolio comes out as 516.17
 
-4\. Diversification
+**4\. Diversification**
 
 a\. Describe the diversification in words between the two assets.
 
-> Correlation matrix given in table 3 measures the strength of
-> relationship between assets and from the correlation matrix it can be
-> seen that the correlation coefficient between BTCINR and the
-> equity-based assets in the portfolio is relatively low, with
-> coefficients ranging from 0.01 to 0.07. This suggests that Bitcoin
-> provides diversification benefits to the portfolio by having low or
-> negative correlations with the equity-based assets.
+Correlation matrix given in table 3 measures the strength of
+relationship between assets and from the correlation matrix it can be
+seen that the correlation coefficient between BTCINR and the
+equity-based assets in the portfolio is relatively low, with
+coefficients ranging from 0.01 to 0.07. This suggests that Bitcoin
+provides diversification benefits to the portfolio by having low or
+negative correlations with the equity-based assets.
 
-Table 3
-
-  --------------------------------------------------------------------------------
-                 MON100   Niftybees   Tatamotors   Voltas   INDHOTEL    BTCINR
-  -------------- -------- ----------- ------------ -------- ----------- ----------
-  MON100         1.00     0.38        0.30         0.21     0.17        0.06
-
-  NIFTYBEES      0.38     1.00        0.58         0.56     0.47        0.07
-
-  TATAMOTORS     0.30     0.58        1.00         0.40     0.37        0.01
-
-  Voltas         0.21     0.56        0.40         1.00     0.38        0.02
-
-  INDHOTEL       0.17     0.47        0.37         0.38     1.00        0.05
-
-  BTCINR         0.06     0.07        0.01         0.02     0.05        1.00
-  --------------------------------------------------------------------------------
+![](images/image7.jpg)
 
 b\. Do you think this portfolio is well diversified or not
 
-> Yes, I think this portfolio is well diversified as by investing in
-> both the MON100 ETF (which tracks the NASDAQ 100 Index) and the
-> NIFTYBEES ETF (which tracks the Nifty 50 Index), an investor can gain
-> exposure to a diverse set of companies across two different countries
-> (the United States and India). This can provide geographical
-> diversification benefits, as well as potential opportunities for
-> growth and risk reduction by investing in different markets with
-> different economic and political conditions.
->
-> As, this portfolio contains Bitcoin which can further diversifies the
-> risk of the portfolio as Bitcoin have different risk profile and low
-> correlation to other equity assets in the portfolio.
+Yes, I think this portfolio is well diversified as by investing in
+both the MON100 ETF (which tracks the NASDAQ 100 Index) and the
+NIFTYBEES ETF (which tracks the Nifty 50 Index), an investor can gain
+exposure to a diverse set of companies across two different countries
+(the United States and India). This can provide geographical
+diversification benefits, as well as potential opportunities for
+growth and risk reduction by investing in different markets with
+different economic and political conditions.
 
-5\. Comparing Portfolios
+As, this portfolio contains Bitcoin which can further diversifies the
+risk of the portfolio as Bitcoin have different risk profile and low
+correlation to other equity assets in the portfolio.
+
+**5\. Comparing Portfolios**
 
 a\. How does your portfolio compare to the others in terms of risk?
 
-  ------------------------------------------------------------ ------ -- --
+![](images/image8.jpg)
 
-  ------------------------------------------------------------ ------ -- --
-
-> Portfolio B has a lower return and volatility compared to Portfolios A
-> and C, but a higher Sharpe ratio compared to Portfolio A. This
-> indicates that it has a better risk-adjusted performance compared to
-> Portfolio A.
+Portfolio B has a lower return and volatility compared to Portfolios A
+and C, but a higher Sharpe ratio compared to Portfolio A. This
+indicates that it has a better risk-adjusted performance compared to
+Portfolio A.
 
 b\. How does your portfolio compare to the others in terms of return?
 
-> Portfolio B consists of three different types of assets and have long
-> all portfolio assets. Portfolio B has higher Sharpe Ratio as compared
-> to Portfolio A and lower volatility with respect to other portfolios A
-> and C. With a better risk-adjusted return, this portfolio can offer
-> investors the opportunity to earn higher returns per unit of risk
-> taken, potentially leading to more stable, long-term wealth
-> generation.
+Portfolio B consists of three different types of assets and have long
+all portfolio assets. Portfolio B has higher Sharpe Ratio as compared
+to Portfolio A and lower volatility with respect to other portfolios A
+and C. With a better risk-adjusted return, this portfolio can offer
+investors the opportunity to earn higher returns per unit of risk
+taken, potentially leading to more stable, long-term wealth
+generation.
 
-6\. Assessing Risk
+**6\. Assessing Risk**
 
-> a\. Describe economic conditions or scenarios that would affect your
-> security.
->
-> The performance of the MON100 and NIFTYBEES ETFs, as well as the Tata
-> Motors, Voltas, and Indian Hotel stocks, can be impacted by the
-> overall conditions of the stock markets in the United States and
-> India. Economy Factors such as interest rates, inflation, GDP growth,
-> geopolitical events, and company earnings reports can all influence
-> stock prices.
->
-> When interest rates rise, it can cause a decrease in investment in
-> stocks as investors may shift their investments to risk-free assets
-> like government bonds or other fixed-income securities that offer a
-> guaranteed return. This is because higher interest rates increase the
-> yield on these fixed-income securities, making them more attractive to
-> investors who are seeking a guaranteed return on their investment. In
-> contrast, stocks are typically viewed as riskier investments that may
-> not offer a guaranteed return, and as interest rates rise, the cost of
-> borrowing also increases, which can negatively impact corporate
-> profits and the overall stock market. However, it\'s important to note
-> that the relationship between interest rates and stock prices is
-> complex and can be influenced by a variety of other factors, such as
-> economic growth, inflation, and investor sentiment.
+a\. Describe economic conditions or scenarios that would affect your
+security.
+
+The performance of the MON100 and NIFTYBEES ETFs, as well as the Tata
+Motors, Voltas, and Indian Hotel stocks, can be impacted by the
+overall conditions of the stock markets in the United States and
+India. Economy Factors such as interest rates, inflation, GDP growth,
+geopolitical events, and company earnings reports can all influence
+stock prices.
+
+When interest rates rise, it can cause a decrease in investment in
+stocks as investors may shift their investments to risk-free assets
+like government bonds or other fixed-income securities that offer a
+guaranteed return. This is because higher interest rates increase the
+yield on these fixed-income securities, making them more attractive to
+investors who are seeking a guaranteed return on their investment. In
+contrast, stocks are typically viewed as riskier investments that may
+not offer a guaranteed return, and as interest rates rise, the cost of
+borrowing also increases, which can negatively impact corporate
+profits and the overall stock market. However, it\'s important to note
+that the relationship between interest rates and stock prices is
+complex and can be influenced by a variety of other factors, such as
+economic growth, inflation, and investor sentiment.
 
 b\. Determine if similar events would hurt one or both members of a
 portfolio.
 
-> Events such as interest rates rise, causes a decrease in investment in
-> stocks as investors may shift their investments to risk-free assets
-> like government bonds or other fixed-income securities that offer a
-> guaranteed return. This is because higher interest rates increase the
-> yield on these fixed-income securities, making them more attractive to
-> investors who are seeking a guaranteed return on their investment. In
-> contrast, stocks are typically viewed as riskier investments that may
-> not offer a guaranteed return, and as interest rates rise, the cost of
-> borrowing also increases, which can negatively impact corporate
-> profits and the overall stock market. However, it\'s important to note
-> that the relationship between interest rates and stock prices is
-> complex and can be influenced by a variety of other factors, such as
-> economic growth, inflation, and investor sentiment.
->
-> Performance of Bitcoin can be impacted by events such as regulatory
-> changes, theft and fraud, regulatory uncertainty or crackdowns can
-> also cause a decline in the price of Bitcoin
+Events such as interest rates rise, causes a decrease in investment in
+stocks as investors may shift their investments to risk-free assets
+like government bonds or other fixed-income securities that offer a
+guaranteed return. This is because higher interest rates increase the
+yield on these fixed-income securities, making them more attractive to
+investors who are seeking a guaranteed return on their investment. In
+contrast, stocks are typically viewed as riskier investments that may
+not offer a guaranteed return, and as interest rates rise, the cost of
+borrowing also increases, which can negatively impact corporate
+profits and the overall stock market. However, it\'s important to note
+that the relationship between interest rates and stock prices is
+complex and can be influenced by a variety of other factors, such as
+economic growth, inflation, and investor sentiment.
 
-7\. Performance
+Performance of Bitcoin can be impacted by events such as regulatory
+changes, theft and fraud, regulatory uncertainty or crackdowns can
+also cause a decline in the price of Bitcoin
 
-> a\. Now describe economic conditions or scenarios that would greatly
-> improve each security. For example, increased business and vacation
-> travel could increase the demand for airline parts (Note: this
-> particular example CANNOT be used!).
->
-> Economic condition of the country such as stable Interest Rates,
-> stable geopolitical environment which boosts the confidence of the
-> investor could lead to increase in prices of the security.
+**7\. Performance**
+
+a\. Now describe economic conditions or scenarios that would greatly
+improve each security. For example, increased business and vacation
+travel could increase the demand for airline parts (Note: this
+particular example CANNOT be used!).
+
+Economic condition of the country such as stable Interest Rates,
+stable geopolitical environment which boosts the confidence of the
+investor could lead to increase in prices of the security.
 
 b\. Determine if similar events would help one or both members of a
 portfolio.
 
-> Event such as increase in the adoption of the crypto currency by the
-> govt., regulation in favor of the crypto assets will increase the
-> demand of the bitcoin which causes the increase in the price of the
-> bitcoin.
+Event such as increase in the adoption of the crypto currency by the
+govt., regulation in favor of the crypto assets will increase the
+demand of the bitcoin which causes the increase in the price of the
+bitcoin.
 
-8\. Disrupters
+**8\. Disrupters**
 
 a\. List the potential influence the central bank may have on the
 portfolio.
 
-> Monetary policy decisions taken by central banks affects the assets of
-> the portfolio such as stocks and the equity etf. Rise in Interest
-> rates and Inflation negatively affect the portfolio and the factors
-> such Quantitative easing (infusion of liquidity by the central banks)
-> positively affect the portfolio.
+Monetary policy decisions taken by central banks affects the assets of
+the portfolio such as stocks and the equity etf. Rise in Interest
+rates and Inflation negatively affect the portfolio and the factors
+such Quantitative easing (infusion of liquidity by the central banks)
+positively affect the portfolio.
 
 b\. List the potential influence that investment banks may have on the
 portfolio.
 
-> Investment banks activity such as research report and recommendation
-> can have effect positively or negatively on the portfolio stocks. they
-> are also some times market maker which can increase or decrease the
-> demand of the stock.
+Investment banks activity such as research report and recommendation
+can have effect positively or negatively on the portfolio stocks. they
+are also some times market maker which can increase or decrease the
+demand of the stock.
 
-9\. Re-assessing Risk
+**9\. Re-assessing Risk**
 
 a\. Do the two investments in the portfolio have the same skew?
 
@@ -493,20 +448,23 @@ No two investments have same skew.
 
 b\. Is there a difference between the types of correlation?
 
-> Co-relation measures the strength of the relationship between the
-> variables. There are two ways to measure correlation Pearson Co
-> relation coefficient and Spearman Co relation. Both these correlation
-> ranges from -1 to 1. -1 indicates negative/inverse correlation. 1
-> indicates the Positive/direct relation between the assets. The value 0
-> represents the no relation between the assets.
+Co-relation measures the strength of the relationship between the
+variables. There are two ways to measure correlation Pearson Co
+relation coefficient and Spearman Co relation. Both these correlation
+ranges from -1 to 1. -1 indicates negative/inverse correlation. 1
+indicates the Positive/direct relation between the assets. The value 0
+represents the no relation between the assets.
 
-Arman Anwar
+------------------------------------------------------------------------------------------------------
 
-MScFE 560
 
-April 27, 2023
+**Arman Anwar**
 
-Portfolio Option-c: The larger context of the Portfolio Option-C
+**MScFE 560**
+
+**April 27, 2023**
+
+## Portfolio Option-c: The larger context of the Portfolio Option-C
 
 The Option-C portfolio addresses the quick recovery hypothesis espoused
 by the Congressional Budget Office (The Economic Outlook for 2023 to
@@ -523,8 +481,7 @@ represented by the y-axis, while the x-axis represents time. As can be
 seen, there is a sharp slowdown forecast in 2023, followed by a sharp
 recovery in late 2023 to early 2024
 
-![](./image1.png){width="3.9861821959755033in"
-height="2.21752624671916in"}
+![](images/image10.jpg)
 
 Fig. 1. Historical and Forecast US Gross Domestic Product (The Economic
 Outlook for 2023 to 2033 in 16 Charts).
@@ -538,8 +495,7 @@ below, Fig. 2. from Black Rock, shows the steep climb in inflation
 depicted by the yellow line as we approach 2022 "Sizing up Inflation --
 Institutional.")
 
-![Persistent inflation](./image2.png){width="6.323603455818023in"
-height="2.292307524059493in"}
+![Persistent inflation](images/image20.jpg)
 
 Fig. 2. Euro and U.S. inflation ("Sizing up Inflation --
 Institutional.")
@@ -549,7 +505,7 @@ Figure 3 below shows the corresponding hikes in the US Federal Reserve
 lag, the inflation rises shown in Figure 2 (Effective Federal Funds
 Rate - FEDERAL RESERVE BANK of NEW YORK.)
 
-![](./image3.png){width="6.5in" height="2.4506944444444443in"}
+![](images/image30.jpg)
 
 Fig. 3. Target Base Lending Rate set by the US Federal Reserve Bank
 (Effective Federal Funds Rate - FEDERAL RESERVE BANK of NEW YORK.)
@@ -630,8 +586,9 @@ quantities to score a particular stock. The three quantities are:
 3.  L1 Normalized returns -- to prioritize the most highly performing
     stocks, we chose the L1 Normalized returns of a stock.
 
-![](./image4.png){width="5.402777777777778in"
-height="0.5972222222222222in"}We Normalize all three quantities so that
+![](images/image40.jpg)
+
+We Normalize all three quantities so that
 when we add them to a weighted sum. Such a generalized sum can be
 represented as a beta-weighted sum of the three quantities, which can be
 mathematically written as:
@@ -642,8 +599,7 @@ the QQQ constituent stocks, and select the top scorer.
 
 Table 1 Scoring results of the QQQ constituent stocks.
 
-![](./image5.png){width="4.6740430883639545in"
-height="3.132090988626422in"}
+![](images/image50.jpg)
 
 As shown in Table 1, the highest scoring stock is FANG, and the next,
 MRNA, is behind quite a bit with a score difference of over 0.2 points.
@@ -662,13 +618,11 @@ the most negatively correlated bond and ETFs with FANG, respectively.
 
 Table 2 Top five bond negative correlations with FANG
 
-![](./image6.png){width="1.9444444444444444in"
-height="1.9027777777777777in"}
+![](images/image60.jpg)
 
 Table 3 Top five ETF negative correlations with FANG
 
-![](./image7.png){width="2.013888888888889in"
-height="1.9027777777777777in"}
+![](images/image70.jpg)
 
 We chart the correlation matrix below in Table 4. Table 4 confirms the
 negative correlations between FANG and the shorted part of the
@@ -681,26 +635,24 @@ observed thus far.
 
 Table 4 Correlation Matrix for the Option-C portfolio.
 
-![](./image8.png){width="6.5in" height="3.2131944444444445in"}
+![](images/image80.jpg)
 
 Fig. 4. Histogram of the unique Option-c portfolio correlation values.
 
 ![Chart Description automatically generated with medium
-confidence](./image9.png){width="6.485293088363955in"
-height="2.250214348206474in"}
+confidence](images/image90.jpg)
 
  
 
 Table 5 Covariance Matrix for the Option-C portfolio.
 
-![](./image10.png){width="6.5in" height="3.1666666666666665in"}
+![](images/image100.jpg)
 
 Table 6 shows the portfolio constituents\' performance, such as average
 annual returns, volatility, skew, kurtosis, and Sharpe Ratio for three
 calendar years.
 
-![](./image11.png){width="5.2984886264216975in"
-height="2.6860400262467192in"}
+![](images/image110.jpg)
 
 Looking at the portfolio members' performance in Table 6. --BNDX stands
 out as having negative skew. All Kurtosis levels are positive. The high
@@ -733,8 +685,7 @@ Sharpe Ratio.
 Fig. 5. Constraint-based optimization problem for allocating the
 portfolio constituents.
 
-![](./image12.png){width="5.520224190726159in"
-height="3.980837707786527in"}
+![](images/image120.jpg)
 
 The results of this maximization result in the following allocation of
 the portfolio constituents (negative allocations being short positions,
@@ -772,7 +723,7 @@ The efficiency frontier of this portfolio can be seen below in Fig. 6.
 
 Fig. 6. Efficiency curve of the portfolio
 
-![](./image13.png){width="6.5in" height="2.7417858705161855in"}
+![](images/image130.jpg)
 
 **Comments on Credit Risk**
 
@@ -851,18 +802,7 @@ a short on this portfolio; we will take the following positions:
 
 **Options "a," "b," and "c" -- A comparison**
 
-Table 7 Performance metrics for Portfolios "a," "b," and "c."
-
-  -----------------------------------------------------------------------
-                    A                 B                 C
-  ----------------- ----------------- ----------------- -----------------
-  Sharpe Ratio      0.91              0.89              1.31
-
-  Volatility        39.43             22.72             107.12
-
-  Annual Return     40.08             25.7              140.44
-  Rate                                                  
-  -----------------------------------------------------------------------
+![](images/image9.jpg)
 
 Portfolio-c can be ruled out; although it enjoys a high return rate, it
 has the highest volatility of the three. Option-b has better volatility
@@ -971,7 +911,10 @@ Accessed 27 Apr. 2023.
 "What Is the Sharpe Ratio?" *Longs-Peak*, 10 Mar. 2020,
 [[https://longspeakadvisory.com/what-is-the-sharpe-ratio/]{.underline}](https://longspeakadvisory.com/what-is-the-sharpe-ratio/).
 
-> Email
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Email
+** By Rahul Garg & Deepak Aggarwal**
 
 Dear \[Investor Name\],
 
@@ -1020,3 +963,7 @@ Best regards.
 Yours Sincerely
 
 Funds Manager (XYZ Company)
+
+## Marketing Piece:
+** By Rahul Garg**
+![](images/image140.jpg)
